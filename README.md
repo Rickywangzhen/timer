@@ -1,3 +1,7 @@
-I used ’clock_getting’ function to measure the cost of the system function calls and read/write calls in the nanosecond. The method is to get time before the call and get time again after that call. Then, I used the second time to minus first one, and get the cost of the call.
+The programming used ’clock_getting’ function to measure the cost of the system function calls and read/write calls in the nanosecond. 
 
-N is loop times for function/system/read calls. I observed N increases cause decreases in the cost of minimal call; this is because the accuracies are better and better, another phenomenon is the cost of the function call is always less than the cost of the system call. After I research it from GOOGLE, the theory described is same as my table shows.
+The method is to call function twitce. Then,the second time minus the first one to get the cost of the call.
+
+N is the loop times for function/system/read calls. The N increases cause decreasing in the cost of minimal call, because the accuracy is getting better and better. 
+
+The cost of the function call always less than the cost of the system call.
